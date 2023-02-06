@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= 'Example RabbitMQ Producer'
+
+  div
+    form(action='/message',method='post')
+      div.input
+          span.label Message:&emsp;
+          input(type="text", name="message")
+      div.input
+          span.label Encrypt:&emsp;
+          input(type="checkbox", name="encrypt", value="true")
+      div.input
+          span.label Passphrase:&emsp;
+          input(type="text", name="passphrase")
+      span.actions &emsp;
+        input(type="submit", value="Send")
+
+  div
+    p= response
