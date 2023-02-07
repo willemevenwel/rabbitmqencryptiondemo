@@ -22,3 +22,14 @@ To run this image that you have just pulled, run the docker run command exposing
 
 For this really basic and default RabbitMQ image the admin console can be accessed going to the following link once the container is running: http://localhost:15672 and logging in using the following credentials for authentication, username (gues), and password (guest). 
 
+### Producer
+
+
+### Consumer
+
+
+### Story
+
+
+#### References (and big thanks to)
+https://www.architect.io/blog/2021-01-19/rabbitmq-docker-tutorial/
