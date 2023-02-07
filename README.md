@@ -20,7 +20,7 @@ To run this image that you have just pulled, run the docker run command exposing
 
 `docker run --rm -it -p 15672:15672 -p 5672:5672 rabbitmq:3-management`
 
-For this really basic and default RabbitMQ image the admin console can be accessed going to the following link once the container is running: http://localhost:15672 and logging in using the following credentials for authentication, username (gues), and password (guest). 
+For this really basic and default RabbitMQ image the admin console can be accessed going to the following link once the container is running: http://localhost:15672 and logging in using the following credentials for authentication, username (guest), and password (guest). 
 
 ### Producer
 
