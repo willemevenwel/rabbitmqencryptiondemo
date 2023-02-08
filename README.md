@@ -36,3 +36,4 @@ For this really basic and default RabbitMQ image the admin console can be access
 
 #### References (and big thanks to)
 https://www.architect.io/blog/2021-01-19/rabbitmq-docker-tutorial/
+https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md
