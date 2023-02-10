@@ -26,7 +26,15 @@ To run this image that you have just pulled, run the docker run command exposing
 For this really basic and default RabbitMQ image the admin console can be accessed going to the following link once the container is running: http://localhost:15672 and logging in using the following credentials for authentication, username (guest), and password (guest). 
 
 ### Producer
+The producer is a NodeJS implementation of a simple example html form which submits a message to an ExpressJS endpoint. This message is then posted to RabbitMQ using the standard amqplib callback api.
 
+The form has a toggle to switch encryption on and off. When encryption is toggled on (checked), then a passphrase is required. After succesful posting of a message to ExpressJS and RabbitMQ a feedback prompt is displayed on the sample html page.
+
+The encryption method used is syncronous encryption. This is not the 'safest' way, but for the intent and demonstration of this example, it was the quickest and simplest mechanism to use. Syncronous encryption means that the same passphrase/secret is used to encrypt and decrypt a given input. The cipher algorithm used is AES which requires a passphrase of 32 characters length.
+
+A quick passphrase can be generated here (remember to change the length to 32 characters): https://1password.com/password-generator/ (I have found that sometimes with certain symbols the encryption doesnt work. So only use alphanumeric characters.
+
+Before the passphrased is used, it is converted to bytes and then those bytes to hex. This is important, because this hex value is the one which is used by the consumer to decrypt.
 
 ### Consumer
 
