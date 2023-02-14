@@ -36,6 +36,8 @@ A quick passphrase can be generated here (remember to change the length to 32 ch
 
 Before the passphrased is used, it is converted to bytes and then those bytes to hex. This is important, because this hex value is the one which is used by the consumer to decrypt.
 
+An important factor to consider is that in practise the method in which this secret/passphrase is shared would also nee to be secure. Something like a vault or secrets manager need to be used.
+
 ### Consumer
 
 
