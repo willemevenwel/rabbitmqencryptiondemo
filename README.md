@@ -47,5 +47,5 @@ The hex value of the passphrase should be provided to this consumer if the param
 
 
 #### References (and big thanks to)
-https://www.architect.io/blog/2021-01-19/rabbitmq-docker-tutorial/
-https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md
+- https://www.architect.io/blog/2021-01-19/rabbitmq-docker-tutorial/
+- https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md
