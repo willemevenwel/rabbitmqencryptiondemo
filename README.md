@@ -36,10 +36,12 @@ A quick passphrase can be generated here (remember to change the length to 32 ch
 
 Before the passphrased is used, it is converted to bytes and then those bytes to hex. This is important, because this hex value is the one which is used by the consumer to decrypt.
 
-An important factor to consider is that in practise the method in which this secret/passphrase is shared would also nee to be secure. Something like a vault or secrets manager need to be used.
+An important factor to consider is that in practise the method in which this secret/passphrase is shared would also need to be secure. Something like a vault or secrets manager need to be used.
 
 ### Consumer
+The consumer is a Python3 implementation of a simple listener to the specific queue. The application takes in a run time argument boolean of true or false, and this toggles on and off whether the consumer should attempt to decrypt the message payload received.
 
+The hex value of the passphrase should be provided to this consumer if the parameter that was parsed at runtime was true. The python code will then be able to decrypt the message payload using the standard Crypto.Cipher library. The hex value of the iv should also be parsed prior to executing the consumer.
 
 ### Story
 
